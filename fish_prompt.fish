@@ -47,11 +47,6 @@ function fish_prompt
     echo -n -s ' ' $git_info $normal
   end
 
-  set -l prompt_color $red
-  if test $last_status = 0
-    set prompt_color $normal
-  end
-
   # Terminate with a nice prompt char
-  echo -e -n -s $prompt_color ' ⌁ ' $normal
+  echo -e -n -s $normal ' ⌁ '
 end
